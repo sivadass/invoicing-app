@@ -1,0 +1,52 @@
+{
+  "name": "Client",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "business_email": {
+      "type": "string"
+    },
+    "business_phone": {
+      "type": "string",
+      "required": true
+    },
+    "business_name": {
+      "type": "string",
+      "required": true
+    },
+    "business_url": {
+      "type": "string",
+      "required": true
+    },
+    "business_logo": {
+      "type": "string"
+    },
+    "business_address": {
+      "type": "string",
+      "required": true
+    },
+    "personal_email": {
+      "type": "string",
+      "required": true
+    },
+    "personal_phone": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
