@@ -46,7 +46,23 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
+  "relations": {
+    "invoices": {
+      "type": "hasMany",
+      "model": "Invoice",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

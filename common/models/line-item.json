@@ -1,0 +1,38 @@
+{
+  "name": "LineItem",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "price": {
+      "type": "number",
+      "required": true
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "invoice": {
+      "type": "belongsTo",
+      "model": "Invoice",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

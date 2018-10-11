@@ -38,5 +38,13 @@
   "Client": {
     "dataSource": "db",
     "public": true
+  },
+  "Invoice": {
+    "dataSource": "db",
+    "public": true
+  },
+  "LineItem": {
+    "dataSource": "db",
+    "public": true
   }
 }

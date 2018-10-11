@@ -1,0 +1,36 @@
+{
+  "name": "Invoice",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "created_on": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "client": {
+      "type": "belongsTo",
+      "model": "Client",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "line_items": {
+      "type": "hasMany",
+      "model": "LineItem",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
